@@ -62,3 +62,5 @@ Philippine peso		PHP
 Singapore dollar	SGD
 Thai baht		THB
 South African rand	ZAR
+
+Version 1.0, March 2021
