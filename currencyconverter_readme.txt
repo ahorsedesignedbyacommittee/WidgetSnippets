@@ -2,7 +2,7 @@ currencyconverter is a simple currency conversion module. It includes one functi
 
 The syntax of this function is:
 
-convert(source_currency, target_currency, amount)
+currencyconverter.convert(source_currency, target_currency, amount)
 
 Where source_currency is the ISO 4217 code of the original currency in which the amount you want to convert is denominated;
 target_currency is the ISO 4217 code of the currency to which you want to convert;
@@ -15,7 +15,7 @@ The source and target currencies must be from the list of supported currencies (
 
 For example: If you wish to convert an amount of US$1,000 into Japanese yen, the syntax would be:
 
-convert("USD", "JPY", 1000)
+currencyconverter.convert("USD", "JPY", 1000)
 
 The function will return a float corresponding to the converted amount in the target currency. This float is unrounded, to leave users 
 flexibility in determining the desired number of decimal places.
