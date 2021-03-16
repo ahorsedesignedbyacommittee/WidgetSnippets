@@ -1,12 +1,13 @@
 def convert (source_currency, target_currency, amount):
 	
-	# This is the main function, which will continue in line 52.
-	# It calls the sub-function findcurrencyrate() to retrieve 
-	# the exchange rates for the source and target currencies online
-		
+	"""Converts between 33 different currencies, based on exchange rates parsed from an ECB-run website.
+	
+	Syntax: currencyconverter.convert(source_currency, target_currency, amount; e.g.: currencyconverter.convert("USD", "HKD", 500)
+	Output: Float nunber corresponding to the amount converted into the target currency """
+	
 	def findcurrencyrate(x):
 		
-		# This function will retrieve the exchnage rate of a desired currency
+		# This function will retrieve the exchange rate of a desired currency
 		# against the euro from the ECB website
 		
 		#Obtains the source code from the ECB website that has currency exchange rates in it
