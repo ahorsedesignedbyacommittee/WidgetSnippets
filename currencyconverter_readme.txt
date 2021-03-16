@@ -63,4 +63,4 @@ Singapore dollar	SGD
 Thai baht		THB
 South African rand	ZAR
 
-Version 1.0, March 2021
+Version 1.1, March 2021
