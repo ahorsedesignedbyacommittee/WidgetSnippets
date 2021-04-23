@@ -103,7 +103,7 @@ def shoesize(source_system, target_system, size):
     	#Picks the applicable formula from the lastlengthformula dictionary 
    	#and uses it to calculate the lastlength (in millimetres)
     	
-	size = float(size)
+	size = float(size) #For security reasons, as this will feed into eval()
     	lastlength_mm = eval(lastlengthformula[source_system])
     
     	#Provides a dictionary of formulas to convert the last length 
