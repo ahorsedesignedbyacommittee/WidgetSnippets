@@ -128,5 +128,5 @@ def shoesize(source_system, target_system, size):
     
     if target_system.lower() in ["eu", "md"]:
         return round(shoesize)
-        if target_system in ["uka", "ukc", "usm", "usf", "usc"]:
-            return round(shoesize * 2.0) / 2.0
+    if target_system.lower() in ["uka", "ukc", "usm", "usf", "usc"]:
+        return round(shoesize * 2.0) / 2.0
