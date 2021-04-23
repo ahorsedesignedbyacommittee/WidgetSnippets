@@ -20,7 +20,7 @@ The source and target currencies must be from the list of supported currencies (
 
 For example: If you wish to convert an amount of US$1,000 into Japanese yen, the syntax would be:
 
-currencyconverter.convert("USD", "JPY", 1000)
+conversions.currency("USD", "JPY", 1000)
 
 The function will return a float corresponding to the converted amount in the target currency. This float is unrounded, to leave users 
 flexibility in determining the desired number of decimal places.
@@ -83,10 +83,16 @@ Where source_system is the (code for the) shoe size measurement system you start
 
 Supported source and target systems are: UK adults (code: "UKa"), UK children ("UKc"), US customary male adults ("USm"), US customary female adults ("USf"), US customary children ("USc"), continental EU ("EU"), and Mondopoint ("MD"). For Mondpoint, the conversion takes into account only the foot length component, not the width; the width cannot be converted as the other systems do not include it in their sizes.
 
+For example: If you wish to convert a shoe size of Mondpoint length 260 to a US female adult size, the syntax would be:
+
+conversions.shoesize("MD", "USf", 255)
+
+The output is 9.5; "MD" and "USf" are not case senitive.
+
 The conversions can only be approximate. This is due to rounding, as sizes in one system do not exactly correspond to sizes in another. It is also due to the fact that the production standards of different shoe manufacturers differ. As a consequence, shoe sizes for different manufacturers may be slightly off from the numbers produced by this conversion tool.
 
 For transparency reasons, it has to be pointed out that this tool makes use of the eval() function. The security risk has been mitigated by means of converting user input to a float number before feeding it into the eval() function.
 
 --------------------------------------------------------------------------------------------
 
-Version 2.0, April 2021
+Version 2.1, April 2021
