@@ -90,7 +90,7 @@ def shoesize(source_system, target_system, size):
     	#from the various source systems into the length 
     	#of the last made to use it
     
-   	 lastlengthformula = {
+   	lastlengthformula = {
     	"uka": "25.4*(size + 25)/3",
     	"ukc": "25.4*(size + 12)/3",
     	"usm": "25.4*(size + 24)/3",
