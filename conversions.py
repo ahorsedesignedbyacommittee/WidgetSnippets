@@ -1,8 +1,8 @@
-def convert (source_currency, target_currency, amount):
+def currency (source_currency, target_currency, amount):
 	
 	"""Converts between 33 different currencies, based on exchange rates parsed from an ECB-run website.
 	
-	Syntax: currencyconverter.convert(source_currency, target_currency, amount; e.g.: currencyconverter.convert("USD", "HKD", 500)
+	Syntax: conversions.currency(source_currency, target_currency, amount; e.g.: currencyconverter.convert("USD", "HKD", 500)
 	Output: Float nunber corresponding to the amount converted into the target currency """
 	
 	def findcurrencyrate(x):
@@ -76,3 +76,58 @@ def convert (source_currency, target_currency, amount):
 		# exchange rates previously obtained
 		new_amount = (amount / source_currency_rate) * target_currency_rate
 		return (new_amount)
+
+	
+def shoesize(source_system, target_system, size):
+	
+	"""Converts between shoe size measurement systems: UK (adults or children), US customary (male adults, female adults, children), EU, Mondpoint (length only)
+	
+	Syntax: conversions.shoesize(source_system, target_system, size; e.g.: conversions.shoesize("UKa", "USm", 10.5)
+	Output: Number corresponding to the shoe size in the target system"""
+    
+
+	#Provides a dictionary of formulas to convert the size 
+    	#from the various source systems into the length 
+    	#of the last made to use it
+    
+   	 lastlengthformula = {
+    	"uka": "25.4*(size + 25)/3",
+    	"ukc": "25.4*(size + 12)/3",
+    	"usm": "25.4*(size + 24)/3",
+    	"usf": "25.4*(size + 23)/3", 
+    	"usc": "25.4*(size + 11.667)/3",
+    	"eu": "size*10*0.667",
+    	"md": "size + 15"
+        }
+        
+    	#Picks the applicable formula from the lastlengthformula dictionary 
+   	#and uses it to calculate the lastlength (in millimetres)
+    	
+	size = float(size)
+    	lastlength_mm = eval(lastlengthformula[source_system])
+    
+    	#Provides a dictionary of formulas to convert the last length 
+   	#into the shoe size for the various systems
+    
+    	sizeformula = {
+    	"uka": "(lastlength_mm/25.4)*3 - 25",
+    	"ukc": "(lastlength_mm/25.4)*3 - 12",
+    	"usm": "(lastlength_mm/25.4)*3 - 24",
+    	"usf": "(lastlength_mm/25.4)*3 - 23", 
+    	"usc": "(lastlength_mm/25.4)*3 - 11.667",
+    	"eu": "lastlength_mm*0.15",
+    	"md": "lastlength_mm - 15"
+        }
+    
+    	#Picks the applicable formula from the sizeformula dictionary 
+    	#and uses it to calculate the shoe size in the target system
+    
+    	shoesize = eval(sizeformula[target_system])
+    
+    	#Rounds to the precision typically used in the target system and
+    	#returns the result
+    
+    	if target_system.lower() in ["eu", "md"]:
+        	return round(shoesize)
+    	if target_system in ["uka", "ukc", "usm", "usf", "usc"]:
+        	return round(shoesize * 2.0) / 2.0
