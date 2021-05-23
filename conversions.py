@@ -2,8 +2,8 @@ def currency (source_currency, target_currency, amount):
 	
 	"""Converts between 33 different currencies, based on exchange rates parsed from an ECB-run website.
 	
-	Syntax: conversions.currency(source_currency, target_currency, amount; e.g.: currencyconverter.convert("USD", "HKD", 500)
-	Output: Float nunber corresponding to the amount converted into the target currency """
+	Syntax: conversions.currency(source_currency, target_currency, amount; e.g.: conversions.currency("USD", "HKD", 500)
+	Output: Float number corresponding to the amount converted into the target currency """
 	
 	def findcurrencyrate(x):
 		
@@ -77,6 +77,84 @@ def currency (source_currency, target_currency, amount):
 		new_amount = (amount / source_currency_rate) * target_currency_rate
 		return (new_amount)
 
+def numbersystems (source_system, target_system, number):
+	"""Converts numbers between different number systems (from binary, i.e. base-2, up to base-36)
+	Syntax: conversions.numbersystems(source_system, target_system, number; e.g.: conversions.numbersystems(8, 16, "54.23")
+	Output: String corresponding to the number converted into the target system. The string will contain a floating point if the converted number did """
+    
+    base_in = int(source_system)
+    base_out = int(target_system)
+    
+    #Creates two dictionaries (one in each direction) for the characters that can
+    #be used and their associated numerical values
+    
+    from string import ascii_uppercase, ascii_lowercase
+    alphabet = ascii_uppercase
+    digit_list = "0123456789"
+    alphabet_and_digits = digit_list + alphabet
+    char_value = {char:alphabet_and_digits.index(char) for char in alphabet_and_digits}
+    inverted_dic = {char_value[item]:item for item in char_value}
+    
+    #Converts lower case letters (if any) in the input into upper case)
+    
+    number_adj = ""
+    for x in number:
+        if x in ascii_lowercase:
+            number_adj += x.upper()
+        else:
+            number_adj += x
+    number = number_adj
+
+    def sum_calculator(s, p, i, step_p, step_i, b):
+        """Handles the calculation of the inserted string into a mathematical sum"""
+        sum = 0
+        while True:
+            if i < -len(s) and step_i == -1:
+                break
+            elif i + 1 > len(s) and step_i == 1:
+                break
+            else:
+                sum += char_value[str(s[i])] * (b ** p)
+                i += step_i
+                p += step_p
+        return sum
+        #sum is now the numerical value of the inserted number (before the point)
+        
+    def from_sum_to_target_system (s, b):
+        """Handles the conversion of the mathematical sum into the representation in the target system"""
+        result_str = ""
+        #Determines the maximum power that the calculation has to start with
+        max_p = 0
+        while True:
+            if b ** max_p <= s:
+                max_p += 1
+            else:
+                break
+        max_p -= 1
+        #Divides the sum progressively by the various powers of the base
+        while True:
+            new_digit = s // (b ** max_p)
+            s -= (b ** max_p) * new_digit
+            result_str += inverted_dic[new_digit]
+            max_p -= 1
+            if max_p == -1: result_str += "."
+            if max_p < -6:
+                break
+        if result_str.split(".")[1] == "000000": return result_str.split(".")[0]
+        else: return result_str
+         
+
+#Splits the inserted string, if there is a point, into the parts before and after that point, and
+#calls the sum_calculator function to obtain the numercial sum
+    if "." in number:
+        number_split = number.split(".")
+        sum_bp = sum_calculator(s=number_split[0], p=0, i=-1, step_p=1, step_i=-1, b = base_in)
+        sum_ap = sum_calculator(s = number_split[1], p=-1, i=0, step_p=-1, step_i=1, b = base_in)
+        sum = sum_bp + sum_ap
+    else:
+        sum = sum_calculator(s=number, p=0, i=-1, step_p=1, step_i=-1, b = base_in)
+        
+    return from_sum_to_target_system(s=sum, b=base_out)
 	
 def shoesize(source_system, target_system, size):
 	
