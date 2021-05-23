@@ -1,4 +1,7 @@
-conversions is a simple module for some minor but handy conversions. It includes two functions, conversions.currency() and conversions.shoesize().
+conversions is a simple module for some minor but handy conversions. It includes three functions:
+conversions.currency()
+conversions.numbersystems()
+conversions.shoesize()
 
 --------------------------------------------------------------------------------------------
 
@@ -69,6 +72,28 @@ Thai baht		THB
 South African rand	ZAR
 
 
+--------------------------------------------------------------------------------------------
+
+conversions.numbersystems()
+
+
+The syntax of this function is:
+
+conversions.numbersystems(source_system, target_system, number)
+
+Where source_system is an integer representing the base of the system from which you want to convert (e.g. 2 for binary, 10 for decimal, 16 for hexadecimal),
+target_system is an integer representing the base of the system you want to convert into,
+and number is a string representing the number you want to convert. It is important to keep in mind that it is indeed a string, not an integer or a floating-point number (this is because in systems with base > 10, letters can be part of a number, e.g. hex F5 = decimal 245)
+
+For systems with base > 10, letters will represent the digits from 10 (in decimal) upwards. The function can handle the usual ten digits plus the 26 (in decimal) letters of the alphabet, which means it accepts systems up to base-36 as source ansd target systems.
+
+As an example: AF51 in hexadecimal: The A represents the digit 10 (in decimal), the F represents the digit 15 (in decimal).
+AF51 (hex) = 10 * 16^3 + 15 * 16^2 + 5 * 16^1 + 1 * 16^0 = 10 * 4096 + 15 * 256 + 5 * 16 + 1 * 1 = 44881 (in decimal)
+
+The entry of letters is not case sensitive.
+
+The function can also handle floating point numbers, with a point as separator; e.g. 67.9 (decimal) = 124.620462 (base-7). It will omit the floating point and the subsequent digits if all digits after the point are zero; otherwise it will output a floating point and six subsequent digits. As in all programming languages, due to the internal workings of the computer being in binary, there can be minor rounding inaccuracies for the digits after the zero, so the function must be jused with caution as far as values < 1 are concerned.
+
 
 --------------------------------------------------------------------------------------------
 
@@ -95,4 +120,4 @@ For transparency reasons, it has to be pointed out that this tool makes use of t
 
 --------------------------------------------------------------------------------------------
 
-Version 2.1, April 2021
+Version 3.0, June 2021
