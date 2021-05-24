@@ -2,11 +2,12 @@ littlemathematics is a simple module that includes functions douing some small m
 The practical usefulness is limited, as there are certainly modules out there that achieve the same reuslts more efficiently.
 Nonetheless, it may be amusing to see what is going on inside the black box.
 
-So far, littlemathematics includes two functions:
+So far, littlemathematics includes four functions:
 littlemathematics.eratosthenes()
 littlemathematics.pimaker()
 littlemathematics.montecarlopi()
 littlemathematics.taxicab()
+
 --------------------------------------------------------------------------------------------
 
 littlemathematics.eratosthenes()
