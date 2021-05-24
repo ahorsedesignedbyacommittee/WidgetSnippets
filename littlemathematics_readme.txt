@@ -46,4 +46,4 @@ The function uses a simple Monte Carlo algorithm to iteratively compute approxim
 The output is a tuple with two floating point numbers; the first is the approximation of pi as calculated by the algorithm, the second is the absolute of the difference between that approximation and the value of pi as stored in the math module of Python. Bear in mind that a Monte Carlo algorithm can only produce approximations, never exact figures; even though the approximations should get more precise (and hence the absolute of the difference smaller) the more iterations you run, you cannot expect that you will get the same result twice if you run the algorithm twice with the same number of iterations.
 
 --------------------------------------------------------------------------------------------
-Version 2.5, May 2021
+Version 2.6, May 2021
