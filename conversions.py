@@ -1,4 +1,5 @@
 ------------------------------------------------------------------------------------------------------------
+
 def currency (source_currency, target_currency, amount):
 	
 	"""Converts between 33 different currencies, based on exchange rates parsed from an ECB-run website.
