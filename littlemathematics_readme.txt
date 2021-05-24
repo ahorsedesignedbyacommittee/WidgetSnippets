@@ -31,7 +31,9 @@ littlemathematics.pimaker(i)
 
 where i is the number of iterations of the algorithm you wish to perform.
 
-The function uses the Bailey-Borwein-Plouffe (BPP) formula to iteratively compute approximations of pi. The output is a tuple with two floating point numbers; the first is the approximation of pi as calculated by the algorithm, the second is the absolute of the difference between that approximation and the value of pi as stored in the math module of Python. You will see that this difference becomes very small even after few iterations.
+The function uses the Bailey-Borwein-Plouffe (BPP) formula to iteratively compute approximations of pi. The output is a tuple with two floating point numbers; 
+the first is the approximation of pi as calculated by the algorithm, the second is the absolute of the difference between that approximation and the value of pi 
+as stored in the math module of Python. You will see that this difference becomes very small even after few iterations.
 
 --------------------------------------------------------------------------------------------
 
@@ -51,7 +53,11 @@ The output is a tuple with two floating point numbers; the first is the approxim
 
 littlemathematics.taxicab()
 
-This function takes no arguments, it is simply called. It performs a brute-force search for the Ramanujan-Hardy number, also known as taxicab number: The smallest natural number that can be expressed as the sum of two cubes in two different ways (for the anecdote behind it, see https://en.wikipedia.org/wiki/Taxicab_number). To perform the search,. the algorithm starts with the smallest cube of a natural number, 1^3 = 3, and sums it with all the cubes it has previously looked at. It then checks if it has come across the same sum before. If yes, it ends the search and outputs that hit; if no, it proceeds to do the same for the cube of the next natural number. Depending on your hardware, the algorithm should identify (and print) the correct result, 1729, quite quickly (within seconds).
+This function takes no arguments, it is simply called. It performs a brute-force search for the Ramanujan-Hardy number, also known as taxicab number: The smallest
+natural number that can be expressed as the sum of two cubes in two different ways (for the anecdote behind it, see https://en.wikipedia.org/wiki/Taxicab_number). 
+To perform the search, the algorithm starts with the smallest cube of a natural number, 1^3 = 3, and sums it with all the cubes it has previously looked at. 
+It then checks if it has come across the same sum before. If yes, it ends the search and outputs that hit; if no, it proceeds to do the same for the cube of the next natural number. 
+Depending on your hardware, the algorithm should identify (and print) the correct result, 1729, quite quickly (within seconds).
 
 --------------------------------------------------------------------------------------------
 Version 2.7, May 2021
