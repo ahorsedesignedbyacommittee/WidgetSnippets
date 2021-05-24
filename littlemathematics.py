@@ -40,3 +40,25 @@ def montecarlopi(p):
 			hits += 1
 	v = (hits/p) * 4
 	return (v, abs(pi-v))
+
+------------------------------------------------------------------------------------------------------------
+
+def taxicab():
+	list_of_sums = []
+	list_of_cubes = []
+	n = 1
+	hit = 0
+	searching = True
+	while searching:
+		c = n ** 3
+		list_of_cubes.append(c)
+		for item in list_of_cubes:
+			s = c + item
+			if s in list_of_sums:
+				hit = s
+				searching = False
+				break
+			else:
+				list_of_sums.append(s)		
+		n += 1
+	print(hit) 
