@@ -11,3 +11,17 @@ def eratosthenes (limit):
 			except:
 				pass
 	return raw_list
+
+------------------------------------------------------------------------------------------------------------
+
+def pimaker(p):
+	
+	k = 0
+	v = 0
+	while k <= p:
+		f1 = 1/16**k
+		f2 = (4/(8*k + 1)) - (2/(8*k + 4)) - (1/(8*k + 5)) - (1/(8*k + 6))
+		v += f1 * f2
+		k += 1
+	from math import pi
+	return (v, abs(pi-v))
