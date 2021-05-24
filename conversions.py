@@ -1,3 +1,4 @@
+------------------------------------------------------------------------------------------------------------
 def currency (source_currency, target_currency, amount):
 	
 	"""Converts between 33 different currencies, based on exchange rates parsed from an ECB-run website.
@@ -77,6 +78,8 @@ def currency (source_currency, target_currency, amount):
 		new_amount = (amount / source_currency_rate) * target_currency_rate
 		return (new_amount)
 
+------------------------------------------------------------------------------------------------------------
+	
 def numbersystems (source_system, target_system, number):
 	"""Converts numbers between different number systems (from binary, i.e. base-2, up to base-36)
 	Syntax: conversions.numbersystems(source_system, target_system, number; e.g.: conversions.numbersystems(8, 16, "54.23")
@@ -155,6 +158,8 @@ def numbersystems (source_system, target_system, number):
         sum = sum_calculator(s=number, p=0, i=-1, step_p=1, step_i=-1, b = base_in)
         
     return from_sum_to_target_system(s=sum, b=base_out)
+	
+------------------------------------------------------------------------------------------------------------
 	
 def shoesize(source_system, target_system, size):
 	
