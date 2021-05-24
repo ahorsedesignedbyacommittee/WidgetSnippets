@@ -6,6 +6,7 @@ So far, littlemathematics includes two functions:
 littlemathematics.eratosthenes()
 littlemathematics.pimaker()
 littlemathematics.montecarlopi()
+littlemathematics.taxicab()
 --------------------------------------------------------------------------------------------
 
 littlemathematics.eratosthenes()
@@ -46,4 +47,10 @@ The function uses a simple Monte Carlo algorithm to iteratively compute approxim
 The output is a tuple with two floating point numbers; the first is the approximation of pi as calculated by the algorithm, the second is the absolute of the difference between that approximation and the value of pi as stored in the math module of Python. Bear in mind that a Monte Carlo algorithm can only produce approximations, never exact figures; even though the approximations should get more precise (and hence the absolute of the difference smaller) the more iterations you run, you cannot expect that you will get the same result twice if you run the algorithm twice with the same number of iterations.
 
 --------------------------------------------------------------------------------------------
-Version 2.6, May 2021
+
+littlemathematics.taxicab()
+
+This function takes no arguments, it is simply called. It performs a brute-force search for the Ramanujan-Hardy number, also known as taxicab number: The smallest natural number that can be expressed as the sum of two cubes in two different ways (for the anecdote behind it, see https://en.wikipedia.org/wiki/Taxicab_number). To perform the search,. the algorithm starts with the smallest cube of a natural number, 1^3 = 3, and sums it with all the cubes it has previously looked at. It then checks if it has come across the same sum before. If yes, it ends the search and outputs that hit; if no, it proceeds to do the same for the cube of the next natural number. Depending on your hardware, the algorithm should identify (and print) the correct result, 1729, quite quickly (within seconds).
+
+--------------------------------------------------------------------------------------------
+Version 2.7, May 2021
