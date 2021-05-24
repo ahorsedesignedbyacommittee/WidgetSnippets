@@ -32,4 +32,4 @@ where i is the number of iterations of the algorithm you wish to perform.
 The function uses the Bailey-Borwein-Plouffe (BPP) formula to iteratively compute approximations of pi. The output is a tuple with two floating point numbers; the first is the approximation of pi as calculated by the algorithm, the second is the absolute of the difference between that approximation and the value of pi as stored in the math module of Python. You will see that this difference becomes very small even after few iterations.
 
 --------------------------------------------------------------------------------------------
-Version 2.0, May 2021
+Version 2.1, May 2021
