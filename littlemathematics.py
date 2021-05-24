@@ -33,10 +33,10 @@ def montecarlopi(p):
 	from random import randrange
 	from math import sqrt, pi
 	hits = 0
-	for n in range(1, p):
-		x = randrange(0, 100000)/100000
-		y = randrange(0, 100000)/100000
-		if sqrt (x**2 + y ** 2) <= 1:
+	for n in range(1, p+1):
+		x = randrange(0, 100000)
+		y = randrange(0, 100000)
+		if sqrt (x**2 + y ** 2) <= 100000:
 			hits += 1
 	v = (hits/p) * 4
-	return (v, abs(pi-v)) 
+	return (v, abs(pi-v))
