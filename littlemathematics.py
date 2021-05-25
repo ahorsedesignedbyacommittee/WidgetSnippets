@@ -48,6 +48,7 @@ def taxicab():
 	list_of_cubes = []
 	n = 1
 	hit = 0
+	summations = {}
 	searching = True
 	while searching:
 		c = n ** 3
@@ -59,6 +60,7 @@ def taxicab():
 				searching = False
 				break
 			else:
-				list_of_sums.append(s)		
+				list_of_sums.append(s)	
+				summations[s] = f"{c} + {item}"	
 		n += 1
-	print(hit) 
+	print(f"{hit} = {summations[s]} = {c} + {item}")
