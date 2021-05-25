@@ -64,7 +64,8 @@ This function takes no arguments, it is simply called. It performs a brute-force
 natural number that can be expressed as the sum of two cubes in two different ways (for the anecdote behind it, see https://en.wikipedia.org/wiki/Taxicab_number). 
 To perform the search, the algorithm starts with the smallest cube of a natural number, 1^3 = 3, and sums it with all the cubes it has previously looked at. 
 It then checks if it has come across the same sum before. If yes, it ends the search and outputs that hit; if no, it proceeds to do the same for the cube of the next natural number. 
-Depending on your hardware, the algorithm should identify (and print) the correct result, 1729, quite quickly (within seconds).
+Depending on your hardware, the algorithm should identify (and print) the correct result quite quickly (within seconds): 1729, together with the two ways to
+express it as the sum of two cubes (1000 + 729 and 1728 + 1).
 
 --------------------------------------------------------------------------------------------
-Version 2.7, May 2021
+Version 2.8, May 2021
