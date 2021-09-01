@@ -38,7 +38,7 @@ conversions.currency("USD", "JPY", 1000)
 The function will return a float corresponding to the converted amount in the target currency. This float is unrounded, to leave users 
 flexibility in determining the desired number of decimal places.
 
-The exchange rates are automatically pulled and parsed from a website of the ECB which is available at
+The exchange rates are automatically pulled and parsed not from an API but from a website of the ECB which is available at
 https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
 This website gives exchange rates of a range of currencies against the euro. However, these rates can be used to calculate cross rates,
 i.e. exchange rates of two non-euro currencies against each other. The ECB obtains the data which underlies this website on the basis of 
