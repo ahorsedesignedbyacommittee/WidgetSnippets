@@ -146,19 +146,4 @@ Both will return their output as a tuple of two integers; the first of these cor
 passover() uses the passover algorithm developed by Carl Friedrich Gauss; easter() uses Harold Spencer Jones' algorithm (originally published anonymously in 1876), which is less widely known than Gauss' Easter algorithm but more elegant (since it does not rely on explicitly formulated exceptions). 
 
 
-
-    © 2021 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-    Status
-    Docs
-
-    Contact GitHub
-    Pricing
-    API
-    Training
-    Blog
-    About
-
-
+Version 1.0, September 2021
