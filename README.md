@@ -5,7 +5,7 @@ Code snippets for little widgets that can be incorporated into your Python progr
 
 
 --------------------------------------------------------------------------------------------
-CONVERSIONS
+#CONVERSIONS
 
 conversions is a simple module for some minor but handy conversions. It includes three functions:
 
@@ -15,9 +15,9 @@ conversions.numbersystems()
 
 conversions.shoesize()
 
-************************************
 
-conversions.currency()
+
+##conversions.currency()
 
 
 The syntax of this function is:
@@ -84,9 +84,9 @@ Thai baht		THB
 South African rand	ZAR
 
 
-************************************
 
-conversions.numbersystems()
+
+##conversions.numbersystems()
 
 
 The syntax of this function is:
@@ -107,9 +107,9 @@ The entry of letters is not case sensitive.
 The function can also handle floating point numbers, with a point as separator; e.g. 67.9 (decimal) = 124.620462 (base-7). It will omit the floating point and the subsequent digits if all digits after the point are zero; otherwise it will output a floating point and six subsequent digits. As in all programming languages, due to the internal workings of the computer being in binary, there can be minor rounding inaccuracies for the digits after the zero, so the function must be jused with caution as far as values < 1 are concerned.
 
 
-************************************
 
-conversions.shoesize()
+
+##conversions.shoesize()
 
 
 The syntax of this function is:
@@ -130,13 +130,13 @@ The conversions can only be approximate. This is due to rounding, as sizes in on
 
 For transparency reasons, it has to be pointed out that this tool makes use of the eval() function. The security risk has been mitigated by means of converting user input to a float number before feeding it into the eval() function.
 
-************************************
 
-Version 3.0, May 2021
+
+##Version 3.0, May 2021
 
 
 --------------------------------------------------------------------------------------------
-RELIGIOUSHOLIDAYS
+#RELIGIOUSHOLIDAYS
 
 
 religiousholidays is a simple module for the calculations of the dates of religious holidays. It includes two functions:
@@ -152,4 +152,4 @@ Both will return their output as a tuple of two integers; the first of these cor
 passover() uses the passover algorithm developed by Carl Friedrich Gauss; easter() uses Harold Spencer Jones' algorithm (originally published anonymously in 1876), which is less widely known than Gauss' Easter algorithm but more elegant (since it does not rely on explicitly formulated exceptions). 
 
 
-Version 1.0, September 2021
+##Version 1.0, September 2021
