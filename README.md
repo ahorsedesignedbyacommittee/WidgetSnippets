@@ -4,7 +4,8 @@ Code snippets for little widgets that can be incorporated into your Python progr
 
 
 
-******************************************************** conversions ********************************************************************************
+--------------------------------------------------------------------------------------------
+CONVERSIONS
 
 conversions is a simple module for some minor but handy conversions. It includes three functions:
 
@@ -14,7 +15,7 @@ conversions.numbersystems()
 
 conversions.shoesize()
 
---------------------------------------------------------------------------------------------
+************************************
 
 conversions.currency()
 
@@ -83,7 +84,7 @@ Thai baht		THB
 South African rand	ZAR
 
 
---------------------------------------------------------------------------------------------
+************************************
 
 conversions.numbersystems()
 
@@ -106,7 +107,7 @@ The entry of letters is not case sensitive.
 The function can also handle floating point numbers, with a point as separator; e.g. 67.9 (decimal) = 124.620462 (base-7). It will omit the floating point and the subsequent digits if all digits after the point are zero; otherwise it will output a floating point and six subsequent digits. As in all programming languages, due to the internal workings of the computer being in binary, there can be minor rounding inaccuracies for the digits after the zero, so the function must be jused with caution as far as values < 1 are concerned.
 
 
---------------------------------------------------------------------------------------------
+************************************
 
 conversions.shoesize()
 
@@ -129,13 +130,14 @@ The conversions can only be approximate. This is due to rounding, as sizes in on
 
 For transparency reasons, it has to be pointed out that this tool makes use of the eval() function. The security risk has been mitigated by means of converting user input to a float number before feeding it into the eval() function.
 
---------------------------------------------------------------------------------------------
+************************************
 
 Version 3.0, May 2021
 
 
+--------------------------------------------------------------------------------------------
+RELIGIOUSHOLIDAYS
 
-******************************************************** religiousholidays **************************************************************************
 
 religiousholidays is a simple module for the calculations of the dates of religious holidays. It includes two functions:
 
