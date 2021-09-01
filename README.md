@@ -1,7 +1,7 @@
 # WidgetSnippets
 Code snippets for little widgets that can be incorporated into your Python programs as functions. Hopefully useful ones.
 
-************************************************************** conversions ********************************************************************************************
+******************************************************** conversions **************************************************************************************
 
 conversions is a simple module for some minor but handy conversions. It includes three functions:
 conversions.currency()
@@ -129,7 +129,7 @@ Version 3.0, May 2021
 
 
 
-************************************************************** religiousholidays **************************************************************************************
+******************************************************** religiousholidays ********************************************************************************
 
 religiousholidays is a simple module for the calculations of the dates of religious holidays. It includes two functions:
 
