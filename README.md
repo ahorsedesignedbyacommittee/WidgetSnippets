@@ -44,42 +44,40 @@ This website gives exchange rates of a range of currencies against the euro. How
 i.e. exchange rates of two non-euro currencies against each other. The ECB obtains the data which underlies this website on the basis of 
 a data collection procedure conducted by central banks across Europe once per workiung day.
 
-The following currencies are supported:
+The following currencies are supported, together with their ISO 4217 code:
 
-Currency		ISO 4217 code
--------------------------------
-U.S. dollar		USD
-Japanese yen		JPY
-Bulgarian lev		BGN
-Czech koruna		CZK
-Danish krone		DKK
-Pound Sterling		GBP
-Hungarian forint	HUF
-Polish zloty		PLN
-Romanian leu		RON
-Swedish krona		SEK
-Swiss franc		CHF
-Icelandic krona		ISK
-Norwegian krone		NOK
-Croatian kuna		HRK
-Russian rouble		RUB
-Turkish lira		TRY
-Australian dollar	AUD
-Brazilian real		BRL
-Canadian dollar		CAD
-Chinese renminbi yuan	CNY
-Hong Kong dollar	HKD
-Indonesian rupiah	IDR
-Israeli shekel		ILS
-Indian rupee		INR
-South Korean won	KRW
-Mexican peso		MXN
-Malaysian ringgit	MYR
-New Zealand dollar	NZD
-Philippine peso		PHP
-Singapore dollar	SGD
-Thai baht		THB
-South African rand	ZAR
+- U.S. dollar		USD
+- Japanese yen		JPY
+- Bulgarian lev		BGN
+- Czech koruna		CZK
+- Danish krone		DKK
+- Pound Sterling		GBP
+- Hungarian forint	HUF
+- Polish zloty		PLN
+- Romanian leu		RON
+- Swedish krona		SEK
+- Swiss franc		CHF
+- Icelandic krona		ISK
+- Norwegian krone		NOK
+- Croatian kuna		HRK
+- Russian rouble		RUB
+- Turkish lira		TRY
+- Australian dollar	AUD
+- Brazilian real		BRL
+- Canadian dollar		CAD
+- Chinese renminbi yuan	CNY
+- Hong Kong dollar	HKD
+- Indonesian rupiah	IDR
+- Israeli shekel		ILS
+- Indian rupee		INR
+- South Korean won	KRW
+- Mexican peso		MXN
+- Malaysian ringgit	MYR
+- New Zealand dollar	NZD
+- Philippine peso		PHP
+- Singapore dollar	SGD
+- Thai baht		THB
+- South African rand	ZAR
 
 
 
