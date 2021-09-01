@@ -5,7 +5,7 @@ Code snippets for little widgets that can be incorporated into your Python progr
 
 
 --------------------------------------------------------------------------------------------
-#CONVERSIONS
+## CONVERSIONS
 
 conversions is a simple module for some minor but handy conversions. It includes three functions:
 
@@ -17,7 +17,7 @@ conversions.shoesize()
 
 
 
-##conversions.currency()
+### conversions.currency()
 
 
 The syntax of this function is:
@@ -86,7 +86,7 @@ South African rand	ZAR
 
 
 
-##conversions.numbersystems()
+### conversions.numbersystems()
 
 
 The syntax of this function is:
@@ -109,7 +109,7 @@ The function can also handle floating point numbers, with a point as separator; 
 
 
 
-##conversions.shoesize()
+### conversions.shoesize()
 
 
 The syntax of this function is:
@@ -132,11 +132,11 @@ For transparency reasons, it has to be pointed out that this tool makes use of t
 
 
 
-##Version 3.0, May 2021
+### Version 3.0, May 2021
 
 
 --------------------------------------------------------------------------------------------
-#RELIGIOUSHOLIDAYS
+## RELIGIOUSHOLIDAYS
 
 
 religiousholidays is a simple module for the calculations of the dates of religious holidays. It includes two functions:
@@ -152,4 +152,4 @@ Both will return their output as a tuple of two integers; the first of these cor
 passover() uses the passover algorithm developed by Carl Friedrich Gauss; easter() uses Harold Spencer Jones' algorithm (originally published anonymously in 1876), which is less widely known than Gauss' Easter algorithm but more elegant (since it does not rely on explicitly formulated exceptions). 
 
 
-##Version 1.0, September 2021
+### Version 1.0, September 2021
