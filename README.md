@@ -9,11 +9,9 @@ Code snippets for little widgets that can be incorporated into your Python progr
 
 conversions is a simple module for some minor but handy conversions. It includes three functions:
 
-conversions.currency()
-
-conversions.numbersystems()
-
-conversions.shoesize()
+- conversions.currency()
+- conversions.numbersystems()
+- conversions.shoesize()
 
 
 
@@ -141,9 +139,8 @@ For transparency reasons, it has to be pointed out that this tool makes use of t
 
 religiousholidays is a simple module for the calculations of the dates of religious holidays. It includes two functions:
 
-religiousholidays.easter()
-
-religiousholidays.passover()
+- religiousholidays.easter()
+- religiousholidays.passover()
 
 Both take one argument as input, an integer which corresponds to the year in the Gregorian calendar. easter() will return the date of Easter in the Gregorian calendar in this year; passover() will return the date of 15 Nisan, the first day of passover in the Jewish calendar, in that Gregorian year (note that leap months ensure that passover is either in March or April, hence there can be only one passover in each Gregorian calendar year). Note that, as per Jewish custom, the day is considered to start at sunset on the previous day, and ends at sunset on the date indicated.
 
