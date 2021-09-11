@@ -1,11 +1,11 @@
 # WidgetSnippets
-Code snippets for little widgets that can be incorporated into your Python programs as functions. Hopefully useful ones.
+Code snippets for little and unspectacular. but potentially useful, widgets that can be incorporated into your programs as functions.
 
 
 
 
 --------------------------------------------------------------------------------------------
-## CONVERSIONS
+## CONVERSIONS (Python)
 
 conversions is a simple module for some minor but handy conversions. It includes three functions:
 
@@ -132,7 +132,7 @@ For transparency reasons, it has to be pointed out that this tool makes use of t
 
 
 --------------------------------------------------------------------------------------------
-## RELIGIOUSHOLIDAYS
+## RELIGIOUSHOLIDAYS (Python)
 
 
 religiousholidays is a simple module for the calculations of the dates of religious holidays. It includes two functions:
@@ -148,3 +148,6 @@ passover() uses the passover algorithm developed by Carl Friedrich Gauss; easter
 
 
 ### Version 1.0, September 2021
+
+--------------------------------------------------------------------------------------------
+## RELIGIOUSHOLIDAYS
