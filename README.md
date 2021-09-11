@@ -156,7 +156,7 @@ len_indexing is meant as an implementation in C of some functions which exist of
 
 It contains two functionS:
 
--len()
+- len()
 - index()
 
 len() is an implementation of the Python function of the same name. It takes an integer as input and returns an integer corresponding to the number of digits in the input integer (its length). If need be, the data type of the input can easily be changed, e.g. to long int.
