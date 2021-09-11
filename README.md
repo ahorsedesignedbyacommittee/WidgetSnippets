@@ -150,4 +150,10 @@ passover() uses the passover algorithm developed by Carl Friedrich Gauss; easter
 ### Version 1.0, September 2021
 
 --------------------------------------------------------------------------------------------
-## RELIGIOUSHOLIDAYS
+## LEN_INDEXING (C)
+
+len_indexing is meant as an implementation in C of some functions which exist off-the-shelf in Python and come in handy many times. 
+
+So far it contains only one function, len(), which is an implementation of the Python function of the same name. It takes an integer as input and returns an integer corresponding to the number of digits in the input integer (its length). If need be, the data type of the input can easily be changed, e.g. to long int.
+
+### Version 1.0, September 2021
