@@ -154,13 +154,19 @@ passover() uses the passover algorithm developed by Carl Friedrich Gauss; easter
 
 len_indexing is meant as an implementation in C of some functions which exist off-the-shelf in Python and come in handy many times. 
 
-It contains two functionS:
+It contains four functionS:
 
 - len()
 - index()
+- poweroften()
+- slice()
 
 len() is an implementation of the Python function of the same name. It takes an integer as input and returns an integer corresponding to the number of digits in the input integer (its length). If need be, the data type of the input can easily be changed, e.g. to long int.
 
 index() is an implementation of Python's feature to index integers. It takes two integers as inputs, the number you're interested in and the index you want to extract. Negative indexes are counted from the end starting with -1 (last digit has index -1, second-to-last digit -2); non-negative indexes are counted from the beginning, starting with 0 (first digit has index 0, second digit 1 etc). The return value is an integer corresponding to the digit of the nunber indentifieded by the selected index.
 
-### Version 2.0, September 2021
+poweroften() takes one integer input; it simply returns 10 to the power of the inputtet integer (exponentials are not supported as a built-in operand in C the way ** is in Python). This will be used in the subsequent function, slice().
+
+slice() is an implementation of the slicing technique familiar to Pythonistas. It takes three integers as input: A number and two index integers. It returns an integer corresponding to the string of digits from that number from the first index (inclusive) to the second (exclusive). Note that the output is in the format of a base-10 integer, not a string (as it is in Python).
+
+### Version 3.0, September 2021
