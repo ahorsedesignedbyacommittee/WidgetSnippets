@@ -5,7 +5,7 @@ Code snippets for little and unspectacular. but potentially useful, widgets that
 
 
 --------------------------------------------------------------------------------------------
-## CONVERSIONS (Python)
+## conversions.py
 
 conversions is a simple module for some minor but handy conversions. It includes three functions:
 
@@ -132,7 +132,7 @@ For transparency reasons, it has to be pointed out that this tool makes use of t
 
 
 --------------------------------------------------------------------------------------------
-## RELIGIOUSHOLIDAYS (Python)
+## religiousholidays.py
 
 
 religiousholidays is a simple module for the calculations of the dates of religious holidays. It includes two functions:
@@ -150,11 +150,11 @@ passover() uses the passover algorithm developed by Carl Friedrich Gauss; easter
 ### Version 1.0, September 2021
 
 --------------------------------------------------------------------------------------------
-## LEN_INDEXING (C)
+## len_indexing.c
 
 len_indexing is meant as an implementation in C of some functions which exist off-the-shelf in Python and come in handy many times. 
 
-It contains four functionS:
+It contains four functions:
 
 - len()
 - index()
