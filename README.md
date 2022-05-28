@@ -129,32 +129,12 @@ For transparency reasons, it has to be pointed out that this tool makes use of t
 
 
 ### Version 3.0, May 2021
-
-
---------------------------------------------------------------------------------------------
-## religiousholidays.py
-
-
-religiousholidays is a simple module for the calculations of the dates of religious holidays. It includes two functions:
-
-- religiousholidays.easter()
-- religiousholidays.passover()
-
-Both take one argument as input, an integer which corresponds to the year in the Gregorian calendar. easter() will return the date of Easter in the Gregorian calendar in this year; passover() will return the date of 15 Nisan, the first day of passover in the Jewish calendar, in that Gregorian year (note that leap months ensure that passover is either in March or April, hence there can be only one passover in each Gregorian calendar year). Note that, as per Jewish custom, the day is considered to start at sunset on the previous day, and ends at sunset on the date indicated.
-
-Both will return their output as a tuple of two integers; the first of these corresponds to the day in March or April of the holiday in question, the second to the month (3 = March, 4 = April). So an output of (16, 4) would correspond to 16 April.
-
-passover() uses the passover algorithm developed by Carl Friedrich Gauss; easter() uses Harold Spencer Jones' algorithm (originally published anonymously in 1876), which is less widely known than Gauss' Easter algorithm but more elegant (since it does not rely on explicitly formulated exceptions). 
-
-
-### Version 1.0, September 2021
-
 --------------------------------------------------------------------------------------------
 ## calendar_fun.c
 
 
 A little C program that takes a year, month and date as input and gives you the day of the week of that date, plus the number of the day in the course of the year (1 December = #1 etc.). It also tells you if the year in question is/was/will be a leap year, and the date of Easter Sunday in that year. Assumes the Gregorian calendar and hence works from 1583 onwards.
-As to the maths: For the day of the week it uses Zeller's Congruence; for the Easter computus the Spencer algorithm.
+As to the maths: For the day of the week it uses Zeller's Congruence; for the Easter computus the Spencer algorithm (originally published anonymously in 1876), which is less widely known than Gauss' Easter algorithm but more elegant (since it does not rely on explicitly formulated exceptions).
 
 
 ### Version 1.0, May 2022
