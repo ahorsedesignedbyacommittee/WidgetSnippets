@@ -1,5 +1,5 @@
 # WidgetSnippets
-Code snippets for little and unspectacular. but potentially useful, widgets that can be incorporated into your programs as functions.
+Code snippets for little and unspectacular. but potentially useful, widgets.
 
 
 
@@ -148,4 +148,15 @@ passover() uses the passover algorithm developed by Carl Friedrich Gauss; easter
 
 
 ### Version 1.0, September 2021
+
+--------------------------------------------------------------------------------------------
+## calendar_fun.c
+
+
+A little C program that takes a year, month and date as input and gives you the day of the week of that date, plus the number of the day in the course of the year (1 December = #1 etc.). It also tells you if the year in question is/was/will be a leap year, and the date of Easter Sunday in that year. Assumes the Gregorian calendar and hence works from 1583 onwards.
+As to the maths: For the day of the week it uses Zeller's Congruence; for the Easter computus the Spencer algorithm.
+
+
+### Version 1.0, May 2022
+
 
