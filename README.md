@@ -1,5 +1,5 @@
 # WidgetSnippets
-Code snippets for little and unspectacular, but potentially useful, widgets.
+Code snippets for little and unspectacular, but potentially useful, widgets and small programs.
 
 
 
