@@ -138,5 +138,13 @@ As to the maths: For the day of the week it uses Zeller's Congruence; for the Ea
 
 
 ### Version 1.0, May 2022
+--------------------------------------------------------------------------------------------
+## vigenere.c
+
+
+A simple and unpretentious C implementation of the classic Vigenère cypher. Not very secure by today's standards, but noteworthy in the history of crytography.
+
+
+### Version 1.0, June 2022
 
 
